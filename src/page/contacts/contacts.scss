@@ -1,0 +1,23 @@
+.block_title {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.Contacts {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+
+  &__container {
+    align-content: center;
+    justify-content: center;
+    width: 60vw;
+    margin: 0 auto;
+  }
+
+  &__map {
+    margin: 20px;
+  }
+}

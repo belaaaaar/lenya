@@ -1,0 +1,4 @@
+#!/bin/bash
+docker rm $(docker stop $(docker ps -a -q --filter ancestor=frontend-lenya --format="{{.ID}}"))
+docker build -t frontend-lenya .
+#docker run -d -p 80:80 frontend-lenya
