@@ -20,7 +20,8 @@ export const News: FC = () => {
             })
             .then((data) => {
                 setPosts(data.Posts);
-            });
+            })
+            .catch(console.log);
     }, [])
     return <div>
         <Layout>

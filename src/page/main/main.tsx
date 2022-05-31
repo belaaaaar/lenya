@@ -32,13 +32,14 @@ export const Main: FC = () => {
     }
 
     useEffect(() => {
-        fetch('http://127.0.0.1:8080/api/rest/posts?limit=3')
-            .then((response) => {
-                return response.json() as Promise<PostsResponse>;
-            })
-            .then((data) => {
-                setPosts(data.Posts);
-            });
+        // fetch('/api/rest/posts?limit=3')
+        //     .then((response) => {
+        //         return response.json() as Promise<PostsResponse>;
+        //     })
+        //     .then((data) => {
+        //         setPosts(data.Posts);
+        //     })
+        //     .catch(console.log);
     }, [])
 
     return <>

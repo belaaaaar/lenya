@@ -3,7 +3,7 @@ FROM node:16-alpine3.14 as builder
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY . ./
-RUN npm ci --silent
+RUN npm i
 RUN npm run build
 
 FROM nginx:1.21.6-alpine
